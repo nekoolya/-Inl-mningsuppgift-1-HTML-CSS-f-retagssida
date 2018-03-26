@@ -1,371 +1,204 @@
 
-
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
 <title>CSS Mondi groups</title>
-
 <meta charset="utf-8">
-
 <meta name="viewport" content="website">
-
 <meta name="author" content="Mondi" />
-
 <!-- Internal CSS -->
 
-
-
 <style>
-
 * {
-
     box-sizing: border-box;
-
 }
-
-
 
 body {
-
   margin: 0;
-
 }
-
-
 
 /* Style the header */
 
-
-
 .header {
-
     background-color:orange;
-
     padding: 10px;
-
 	font-family: "Times New Roman", Times, serif;
-
 	font-size: 14;
-
 	line-height: 1.5;
-
     text-align: left-side;
-
 }
-
-
 
 /*set the line height for all of header tags*/
-
 	h1, h2{
-
-	line-height: 30px; 
-
+	line-height: 30px
+	color: green; 
 }
-
-
 
 .topnav {
-
     overflow: hidden;
-
     background-color: white;
-
 }
-
-
 
 /* Style the topnav links */
-
 .topnav a {
-
     float: left;
-
     display: block;
-
     color: orange;
-
     text-align: left ;
-
     padding: 16px 18px;
-
     text-decoration: none;
-
 }
-
-
 
 /* Change color on hover */
-
    .topnav a:hover {
-
     background-color: white;
-
     color: black;
-
 }
-
-
 
 /* 2 unequal columns that floats next to each other */
-
 	.column {
-
     float: left;
-
     padding: 25px;
-
 }
-
-
 
 /* Left column */
-
 	.column.left-side {
-
     width: 25%;
-
 }
-
-
 
 /* Right column */
-
 	.column.right-side {
-
     width: 75%;
 
-
-
 /* Clear floats after the columns */
-
 	.row:after {
-
     content: "";
-
     display: table;
-
     clear: both;
-
+}
+	
 }
 
-	
-
+.footer {
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 4em;
+    margin-top: 4em;
+    background-color: gray;
+    color: white;
+    text-align: center;
 }
 
 	</style>
-
 	</head>
-
 	<body>
-
-
 
 	<!-- HTML, Header block-->
 
-
-
 	<div class="header">
-
 	<!-- Name of the company shown by using a picture -->
-
 	<h1>
-
-	<img src ="mondi.jpg"
-
+	<img src ="file:///C:/Users/olgas/Documents/mondi.jpg"
 	alt ="Picture cannot be found"
-
 	style="width="250" height="100"> 
-
 	</h1>
-
 	
-
 	<!-- Moto-->
-
 	<p> <b>We want to delight you with our innovative and sustainable packaging and paper solutions. 
-
 	<br>   With over 100 products customized into more than 100,000 solutions, we offer more than you may expect. <br>
-
 	</b> </p>
-
 	</div>
-
 	
-
 	<!-- LINKS block -->
-
 	
-
 	<div class="topnav">
-
 	<a href="#"> <strong> Our Business </strong> </a>
-
 	<a href="#"> <strong> Our Products </strong> </a>
-
 	<a href="#"> <strong> Where we operate </strong> </a>
-
 	</div>
-
-
 
 	<!-- LEFT SIDE COLUMN block-->
-
 	<div class="row">
-
 	<div class="column left-side">
-
   
-
     <h1>About us</h1>
-
 	
-
     <p> Mondi is a global packaging and paper group, employing around 25,400 people across more than 30 countries. We want to delight you with our innovative and sustainable packaging and paper solutions. </p>
-
 	<p> From managing forests and producing pulp, paper and compound plastics, to developing effective and innovative industrial and consumer packaging solutions. Our products touch the lives of millions, every day.
-
     </p>
-
    
-
     <h2> Our strategy </h2>
-
 	
-
 	<p> Our strategy is to deliver sustainable value by providing high-quality packaging and paper solutions, and we achieve this by focusing on our four strategic value drivers.</p>
-
 	<p> This approach enables us to make the most of the competitive advantages we enjoy today, and sets a clear framework for our investment and operational decisions so that we can continue to create value into the future. While all strategic value drivers are relevant to each of our businesses, priority levels may differ across the value chain.</p>
-
 	
-
     <h3>Contact us </h3> <!-- want the same size, that's why using h2 twice-->
-
 	
-
     <p> Address:<br> Marxergasse 4A <br>1030 Vienna Austria <br> Tel: +43 1 790 13-0 </br> </p>
-
 	
-
 	<!-- LINKS TO SOCIAL MEDIA WITH ICONS, in a list-->
-
 	
-
 	<!-- Facebook-->
-
 	
-
 	<ul style= "list-style-type:none">
-
 	
-
-	<li> <img src ="facebook.png"
-
+	<li> <img src ="file:///C:/Users/olgas/Documents/facebook.png"
 	width="20" height="20">
-
 	<a href="https://www.facebook.com/mondigroup/"> Facebook</a> <br> </li>
-
 	
-
 	<!-- Twitter -->
-
 	
-
-	<li> <img src ="twitter.png"
-
+	<li> <img src ="file:///C:/Users/olgas/Documents/twitter.png"
 	width="20" height="20">
-
 	<a href= "https://twitter.com/mondi_group?lang=en"> Twitter </br> </a> </li>
-
 	
-
 	<!-- LinkedIn-->
-
 	
-
-	<li> <img src ="LinkedIn icon.png"
-
+	<li> <img src ="file:///C:/Users/olgas/Documents/LinkedIn icon.png"
 	width="20" height="20">
-
 	<a href= "https://www.linkedin.com/company/mondi-group/"> LinkedIn </br> </a> </li>
-
 	</div>
-
 	
-
 	<!-- RIGHT SIDE COLUMN block -->
-
   
-
 	<div class="column right-side">
-
 	
-
     <h1> What we do</h1>
-
 	
-
     <p>We sustainably manage forests and purchase wood from responsible sources to produce pulp. Along with paper for recycling, we then turn the pulp into containerboard, kraft paper and uncoated fine paper.</p>
-
 	<p> Our converting operations require paper and other raw materials such as resins, films and nonwovens (some of which we produce ourselves) to create a wide range of innovative and sustainable packaging solutions and advanced materials that contribute to our customers' success.    </p> 
-
 	<p> We are fully integrated across the packaging and paper value chain – from managing forests and producing pulp, paper and compound plastics to developing industrial and consumer packaging solutions. </p>
-
 	
-
 	<!-- ADDING IMAGES-->
-
 	
-
-	<img src ="cartonge.jpg"
-
+	<img src ="file:///C:/Users/olgas/Documents/cartonge.jpg"
 	alt ="Picture cannot be found" width="300" height="200">
 
-
-
-	<img src ="paper and box.jpg"
-
+	<img src ="file:///C:/Users/olgas/Documents/paper and box.jpg"
 	alt ="Picture cannot be found" width="300" height="200">
-
 	
-
-	<img src ="pen.jpg"
-
+	<img src ="file:///C:/Users/olgas/Documents/pen.jpg"
 	alt ="Picture cannot be found" width="300" height="200">
-
   
-
     <h2> Our competitive advantages </h2>
-
     <p> Superior returns on capital employed thanks to our disciplined approach to, and implementation of investment decisions.
-
 	Inherent and sustainable cost advantages because of our high-quality, low-cost production base; footprint in emerging markets; and focus on driving performance. Our passion for performance will always be central to the way we run our business and is demonstrated through a continuous focus on quality, productivity and efficiency.
-
 	We have systems and processes in place to benchmark against our best performing operations, share lessons learnt, identify emerging issues, optimise productivity, minimise waste and deliver quality products to our customers on time. </p>
-
 	
-
 	<h2> Invest in assets with cost advantage </h2>
-
 	<p> Investing in assets with a cost advantage to maintain and enhance our competitive advantages plays an important role in delivering our industry leading returns. This is of particular importance in our pulp and paper assets, where products are generally more commoditised and low-cost production is key. </p>
-
 	
-
 	<h2> Inspire our people and grow responsibly </h2>
-
 	<p> Our long-term success is dependent on our ability to integrate sustainability across the Group. This ensures that we can continue to address the risks and opportunities that arise from global environmental and societal trends, retain our competitive edge and generate value for our stakeholders.
-
 	 We believe that being part of the solution to global challenges will secure the long-term success of our business and the wellbeing of our communities and other stakeholders. </p>
-
 	
-
-</div>
-
-
+	<!-- Footer, kontaktuppgifter organisations nummer-->
+	
+	<div class="footer">
+  <p>Copyright Mondi <br> <br> Marxergasse 4A 1030 Vienna Austria  Tel: +43 1 790 13-0 Email: mondi@gmail.com, Organisation number: 117223344-5678</footer>
+  </p>   </div>
+  
 
 </body>
-
 </html>
